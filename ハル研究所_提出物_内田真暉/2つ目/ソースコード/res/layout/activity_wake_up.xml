@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding ="30dp"
+    tools:context=".activity.WakeUpActivity">
+
+    <TextView
+        android:id="@+id/dateWakeUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/timeWakeUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/dateWakeUp" />
+
+
+    <ng.max.slideview.SlideView
+        android:id="@+id/slide_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

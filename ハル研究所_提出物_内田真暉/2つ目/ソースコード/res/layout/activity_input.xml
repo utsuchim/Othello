@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InputActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        app:title="アラームの設定"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:theme="@style/time_picker_style"
+        android:headerBackground="@color/timepickerHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarInput" />
+
+    <View
+        android:id="@+id/while_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#606060"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_picker" />
+
+
+
+    <LinearLayout
+        android:id="@+id/music_sel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_corners"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/while_view">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                android:text="@string/alarmMusic"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/input_musicName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="デフォルト"
+                android:textColor="#cccccf"
+                android:layout_marginStart="20dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/arrow_right">
+
+        </View>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editAlarmText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/alarm_label"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music_sel_button"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/input_save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_save"
+            android:textSize="25sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

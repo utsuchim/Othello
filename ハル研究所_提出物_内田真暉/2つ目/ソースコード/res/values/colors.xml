@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="timepickerHeader">#212121</color>
+    <color name="colorPrimary">#00ffff</color>
+    <color name="colorPrimaryVariant">#4169e1</color>
+    <color name="colorOnPrimary">#fef4f4</color>
+    <color name="colorPrimaryDark">#3a3a3a</color>
+    <color name="colorPrimaryVariantDark">#2b2b2b</color>
+    <color name="colorOnPrimaryDark">#eaf4fc</color>
+    <color name="colorSecondaryDark">#0d0015</color>
+    <color name="colorSecondaryVariantDark">#7d7d7d</color>
+    <color name="colorOnSecondaryDark">#fef4f4</color>
+    <color name="statusBarColorDark">#3a3a3a</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="toggle_on">#FFFFFFFF</color>
+    <color name="toggle_off">#A9A9A9</color>
+    <color name="toggle_on_back">#3f3f3f</color>
+    <color name="toggle_off_back">#5f5f5f</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#808080</color>
+    <color name="aqua">#00ffff</color>
+    <color name="next_alarm">#fcfcfc</color>
+    <color name="next_alarm_text">#bebebe</color>
+    <color name="select_alarm">#9370DB</color>
+    <color name="white_status_bar">#00ffff</color>
+    <color name="card_view_music_header_back">#3a3a3a</color>
+</resources>
